@@ -51,7 +51,7 @@ data = data.sort_values(by=[chosen_base_currency], ascending=True).reset_index(
     drop=True
 )
 figure = create_figure(data, chosen_base_currency)
-st.plotly_chart(figure)
+st.plotly_chart(figure, use_container_width=True)
 
 # Data view
 st.subheader('Data')
