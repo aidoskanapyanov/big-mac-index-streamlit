@@ -46,5 +46,6 @@ def create_figure(data, base_currency):
         width=700,
         height=500,
         plot_bgcolor="rgba(255,255,255,1)",
+        dragmode=False,
     )
     return fig
