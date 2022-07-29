@@ -29,10 +29,15 @@ def create_figure(data, base_currency):
         )
 
     # Set x-axes tick mode
-    fig.update_xaxes(tickmode='linear')
+    fig.update_xaxes(
+        tickmode='linear',
+        showgrid=False,
+        fixedrange=True,
+        tickfont=dict(family="arial", size=6),
+    )
 
     # Set y-axes as percentage
-    fig.update_yaxes(tickformat=".1%")
+    fig.update_yaxes(tickformat=".1%", showgrid=False, fixedrange=True)
 
     # Set figure size
     fig.update_layout(
@@ -41,9 +46,5 @@ def create_figure(data, base_currency):
         width=700,
         height=500,
         plot_bgcolor="rgba(255,255,255,1)",
-        font=dict(
-            family="sans-serif",
-            size=10,
-        ),
     )
     return fig
