@@ -44,7 +44,7 @@ streamlit run src/the_big_mac_index.py
 
 ## Deployment
 
-To deploy this project run
+To deploy this project run:
 - Publish this project to your github account 📁
 - Sign up to share.streamlit.io
 - Press the "New app" button and choose your repository 🆕
